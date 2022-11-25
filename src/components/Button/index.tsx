@@ -1,10 +1,11 @@
+
 import style from './Button.module.scss'
 
-function Button(){
+function Button({children}: { children: string}){
    
     return(
         <button className={style.botao}>
-            Botão
+            {children}
         </button>
     )
 }
